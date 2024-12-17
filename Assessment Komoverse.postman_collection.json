@@ -1,0 +1,557 @@
+{
+	"info": {
+		"_postman_id": "4998f5d8-ccd4-4a8c-a150-d6cf506df513",
+		"name": "Assessment Komoverse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8238399"
+	},
+	"item": [
+		{
+			"name": "Get Leaderboard with Pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/leaderboard?page=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"leaderboard"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "8",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "Player_5417",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Leaderboard with Pagination",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/leaderboard?page=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"leaderboard"
+							],
+							"query": [
+								{
+									"key": "level",
+									"value": "8",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "Player_5417",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 17 Dec 2024 23:25:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.62 (Debian)"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=98"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"data\": {\n        \"totalPage\": 400,\n        \"currentPage\": 3,\n        \"totalData\": 10000,\n        \"data\": [\n            {\n                \"ranking\": 51,\n                \"user_id\": 613,\n                \"username\": \"Player_613\",\n                \"last_level\": 10,\n                \"total_score\": \"6622\"\n            },\n            {\n                \"ranking\": 52,\n                \"user_id\": 2769,\n                \"username\": \"Player_2769\",\n                \"last_level\": 10,\n                \"total_score\": \"6621\"\n            },\n            {\n                \"ranking\": 53,\n                \"user_id\": 771,\n                \"username\": \"Player_771\",\n                \"last_level\": 10,\n                \"total_score\": \"6620\"\n            },\n            {\n                \"ranking\": 54,\n                \"user_id\": 1350,\n                \"username\": \"Player_1350\",\n                \"last_level\": 8,\n                \"total_score\": \"6619\"\n            },\n            {\n                \"ranking\": 55,\n                \"user_id\": 5209,\n                \"username\": \"Player_5209\",\n                \"last_level\": 10,\n                \"total_score\": \"6618\"\n            },\n            {\n                \"ranking\": 56,\n                \"user_id\": 2101,\n                \"username\": \"Player_2101\",\n                \"last_level\": 10,\n                \"total_score\": \"6608\"\n            },\n            {\n                \"ranking\": 57,\n                \"user_id\": 4812,\n                \"username\": \"Player_4812\",\n                \"last_level\": 10,\n                \"total_score\": \"6599\"\n            },\n            {\n                \"ranking\": 58,\n                \"user_id\": 1585,\n                \"username\": \"Player_1585\",\n                \"last_level\": 10,\n                \"total_score\": \"6589\"\n            },\n            {\n                \"ranking\": 59,\n                \"user_id\": 1212,\n                \"username\": \"Player_1212\",\n                \"last_level\": 9,\n                \"total_score\": \"6582\"\n            },\n            {\n                \"ranking\": 60,\n                \"user_id\": 4533,\n                \"username\": \"Player_4533\",\n                \"last_level\": 10,\n                \"total_score\": \"6575\"\n            },\n            {\n                \"ranking\": 61,\n                \"user_id\": 2658,\n                \"username\": \"Player_2658\",\n                \"last_level\": 10,\n                \"total_score\": \"6571\"\n            },\n            {\n                \"ranking\": 62,\n                \"user_id\": 3386,\n                \"username\": \"Player_3386\",\n                \"last_level\": 10,\n                \"total_score\": \"6568\"\n            },\n            {\n                \"ranking\": 63,\n                \"user_id\": 9846,\n                \"username\": \"Player_9846\",\n                \"last_level\": 10,\n                \"total_score\": \"6559\"\n            },\n            {\n                \"ranking\": 64,\n                \"user_id\": 7596,\n                \"username\": \"Player_7596\",\n                \"last_level\": 10,\n                \"total_score\": \"6550\"\n            },\n            {\n                \"ranking\": 65,\n                \"user_id\": 8901,\n                \"username\": \"Player_8901\",\n                \"last_level\": 10,\n                \"total_score\": \"6534\"\n            },\n            {\n                \"ranking\": 66,\n                \"user_id\": 9038,\n                \"username\": \"Player_9038\",\n                \"last_level\": 10,\n                \"total_score\": \"6531\"\n            },\n            {\n                \"ranking\": 67,\n                \"user_id\": 9930,\n                \"username\": \"Player_9930\",\n                \"last_level\": 10,\n                \"total_score\": \"6528\"\n            },\n            {\n                \"ranking\": 68,\n                \"user_id\": 9105,\n                \"username\": \"Player_9105\",\n                \"last_level\": 10,\n                \"total_score\": \"6524\"\n            },\n            {\n                \"ranking\": 69,\n                \"user_id\": 2173,\n                \"username\": \"Player_2173\",\n                \"last_level\": 10,\n                \"total_score\": \"6516\"\n            },\n            {\n                \"ranking\": 70,\n                \"user_id\": 2992,\n                \"username\": \"Player_2992\",\n                \"last_level\": 10,\n                \"total_score\": \"6511\"\n            },\n            {\n                \"ranking\": 71,\n                \"user_id\": 2966,\n                \"username\": \"Player_2966\",\n                \"last_level\": 10,\n                \"total_score\": \"6501\"\n            },\n            {\n                \"ranking\": 72,\n                \"user_id\": 9591,\n                \"username\": \"Player_9591\",\n                \"last_level\": 8,\n                \"total_score\": \"6500\"\n            },\n            {\n                \"ranking\": 73,\n                \"user_id\": 9733,\n                \"username\": \"Player_9733\",\n                \"last_level\": 10,\n                \"total_score\": \"6494\"\n            },\n            {\n                \"ranking\": 74,\n                \"user_id\": 5984,\n                \"username\": \"Player_5984\",\n                \"last_level\": 10,\n                \"total_score\": \"6487\"\n            },\n            {\n                \"ranking\": 75,\n                \"user_id\": 5601,\n                \"username\": \"Player_5601\",\n                \"last_level\": 9,\n                \"total_score\": \"6484\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Leaderboard with Username Param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/leaderboard?username=Player_1585",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"leaderboard"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "level",
+							"value": "8",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "Player_1585"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Leaderboard with Username Param",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/leaderboard?username=Player_1585",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"leaderboard"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "level",
+									"value": "8",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "Player_1585"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 17 Dec 2024 23:25:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.62 (Debian)"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"data\": {\n        \"totalPage\": 1,\n        \"currentPage\": 1,\n        \"totalData\": 1,\n        \"data\": [\n            {\n                \"ranking\": 58,\n                \"user_id\": 1585,\n                \"username\": \"Player_1585\",\n                \"last_level\": 10,\n                \"total_score\": \"6589\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Leaderboard in specific Level Param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/leaderboard?level=8",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"leaderboard"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "level",
+							"value": "8"
+						},
+						{
+							"key": "username",
+							"value": "Player_5417",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Leaderboard in specific Level Param",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/leaderboard?level=8",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"leaderboard"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "level",
+									"value": "8"
+								},
+								{
+									"key": "username",
+									"value": "Player_5417",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 17 Dec 2024 23:26:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.62 (Debian)"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"data\": {\n        \"totalPage\": 118,\n        \"currentPage\": 1,\n        \"totalData\": 2944,\n        \"data\": [\n            {\n                \"ranking\": 1,\n                \"user_id\": 2552,\n                \"username\": \"Player_2552\",\n                \"last_level\": 8,\n                \"total_score\": \"1000\"\n            },\n            {\n                \"ranking\": 2,\n                \"user_id\": 6439,\n                \"username\": \"Player_6439\",\n                \"last_level\": 8,\n                \"total_score\": \"1000\"\n            },\n            {\n                \"ranking\": 3,\n                \"user_id\": 9238,\n                \"username\": \"Player_9238\",\n                \"last_level\": 8,\n                \"total_score\": \"1000\"\n            },\n            {\n                \"ranking\": 4,\n                \"user_id\": 9534,\n                \"username\": \"Player_9534\",\n                \"last_level\": 8,\n                \"total_score\": \"1000\"\n            },\n            {\n                \"ranking\": 5,\n                \"user_id\": 2888,\n                \"username\": \"Player_2888\",\n                \"last_level\": 8,\n                \"total_score\": \"999\"\n            },\n            {\n                \"ranking\": 6,\n                \"user_id\": 9656,\n                \"username\": \"Player_9656\",\n                \"last_level\": 8,\n                \"total_score\": \"998\"\n            },\n            {\n                \"ranking\": 7,\n                \"user_id\": 1472,\n                \"username\": \"Player_1472\",\n                \"last_level\": 8,\n                \"total_score\": \"997\"\n            },\n            {\n                \"ranking\": 8,\n                \"user_id\": 4958,\n                \"username\": \"Player_4958\",\n                \"last_level\": 8,\n                \"total_score\": \"997\"\n            },\n            {\n                \"ranking\": 9,\n                \"user_id\": 6790,\n                \"username\": \"Player_6790\",\n                \"last_level\": 8,\n                \"total_score\": \"997\"\n            },\n            {\n                \"ranking\": 10,\n                \"user_id\": 6899,\n                \"username\": \"Player_6899\",\n                \"last_level\": 8,\n                \"total_score\": \"997\"\n            },\n            {\n                \"ranking\": 11,\n                \"user_id\": 9123,\n                \"username\": \"Player_9123\",\n                \"last_level\": 8,\n                \"total_score\": \"997\"\n            },\n            {\n                \"ranking\": 12,\n                \"user_id\": 9195,\n                \"username\": \"Player_9195\",\n                \"last_level\": 8,\n                \"total_score\": \"997\"\n            },\n            {\n                \"ranking\": 13,\n                \"user_id\": 9302,\n                \"username\": \"Player_9302\",\n                \"last_level\": 8,\n                \"total_score\": \"997\"\n            },\n            {\n                \"ranking\": 14,\n                \"user_id\": 9531,\n                \"username\": \"Player_9531\",\n                \"last_level\": 8,\n                \"total_score\": \"996\"\n            },\n            {\n                \"ranking\": 15,\n                \"user_id\": 7209,\n                \"username\": \"Player_7209\",\n                \"last_level\": 8,\n                \"total_score\": \"995\"\n            },\n            {\n                \"ranking\": 16,\n                \"user_id\": 2619,\n                \"username\": \"Player_2619\",\n                \"last_level\": 8,\n                \"total_score\": \"994\"\n            },\n            {\n                \"ranking\": 17,\n                \"user_id\": 9879,\n                \"username\": \"Player_9879\",\n                \"last_level\": 8,\n                \"total_score\": \"994\"\n            },\n            {\n                \"ranking\": 18,\n                \"user_id\": 2637,\n                \"username\": \"Player_2637\",\n                \"last_level\": 8,\n                \"total_score\": \"993\"\n            },\n            {\n                \"ranking\": 19,\n                \"user_id\": 3244,\n                \"username\": \"Player_3244\",\n                \"last_level\": 8,\n                \"total_score\": \"993\"\n            },\n            {\n                \"ranking\": 20,\n                \"user_id\": 4188,\n                \"username\": \"Player_4188\",\n                \"last_level\": 8,\n                \"total_score\": \"993\"\n            },\n            {\n                \"ranking\": 21,\n                \"user_id\": 6148,\n                \"username\": \"Player_6148\",\n                \"last_level\": 8,\n                \"total_score\": \"993\"\n            },\n            {\n                \"ranking\": 22,\n                \"user_id\": 6827,\n                \"username\": \"Player_6827\",\n                \"last_level\": 8,\n                \"total_score\": \"993\"\n            },\n            {\n                \"ranking\": 23,\n                \"user_id\": 3110,\n                \"username\": \"Player_3110\",\n                \"last_level\": 8,\n                \"total_score\": \"992\"\n            },\n            {\n                \"ranking\": 24,\n                \"user_id\": 3931,\n                \"username\": \"Player_3931\",\n                \"last_level\": 8,\n                \"total_score\": \"992\"\n            },\n            {\n                \"ranking\": 25,\n                \"user_id\": 6699,\n                \"username\": \"Player_6699\",\n                \"last_level\": 8,\n                \"total_score\": \"992\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Submit Level Score",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"user_id\": 1,\n    \"level\":1,\n    \"score\":100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/submit-score",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"submit-score"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Submit Level Score",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n    \"user_id\": 1,\n    \"level\":1,\n    \"score\":100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/submit-score",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"submit-score"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 17 Dec 2024 22:35:12 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.62 (Debian)"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=97"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"data\": {\n        \"submittedScore\": {\n            \"user_id\": 1,\n            \"level\": 1,\n            \"score\": 100\n        },\n        \"highscore\": 510\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "External Submit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"user_id\": 1,\n    \"level\":1,\n    \"score\":100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/external-submit",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"external-submit"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "External Submit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n    \"user_id\": 1,\n    \"level\":1,\n    \"score\":100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/external-submit",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"external-submit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 17 Dec 2024 23:26:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.62 (Debian)"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"request_ts\": 1734477996000,\n    \"message\": \"OK\"\n}"
+				}
+			]
+		}
+	]
+}
